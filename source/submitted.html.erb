@@ -1,0 +1,36 @@
+<script type='text/x-handlebars-template' id='form-template'>
+  <p>
+    Name: <br/>
+    {{ name }}
+  </p>
+  <p>
+    Phone: <br/>
+    {{ phone }}
+  </p>
+  <p>
+    Email: <br/>
+    {{ email }}
+  </p>
+  <p>
+    Did you navigate the site well?: <br/>
+    {{ site_navigation }}
+  </p>
+  <p>
+    Was all the information correct?: <br/>
+    {{ correctness }}
+  </p>
+  <p>
+    Did you enjoy our services?: <br/>
+    {{ enjoyment }}
+  </p>
+</script>
+<script>
+  $(document).ready(function(){
+    var source   = $("#form-template").html();
+    var template = Handlebars.compile(source);
+    var data = $.url(window.location.href).param();
+    $(".holder").html(template(data));
+  });
+</script>
+
+<div class="holder"></div>

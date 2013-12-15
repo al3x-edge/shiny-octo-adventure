@@ -1,0 +1,56 @@
+- content_for :head do
+  = stylesheet_link_tag "contactus"
+
+h1 Contact Us
+
+h3 Where We Are
+.row.clearfix
+  .half
+    p
+      markdown:
+        171-3 Fairmount Ave W.  
+        Lakewood, NY 14750  
+        716-763-3531
+  .half
+    <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?ie=UTF8&amp;q=Dipson+Theatres+Lakewood+Cinema+8&amp;fb=1&amp;gl=us&amp;hq=Lakewood+Cinema+8&amp;hnear=0x89d2ab03bb4bc24b:0x42cd19540bd5578c,171+W+Fairmount+Ave,+Lakewood,+NY+14750&amp;cid=12568654799968424346&amp;t=h&amp;iwloc=A&amp;ll=42.097185,-79.343017&amp;spn=0.006295,0.006295&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?ie=UTF8&amp;q=Dipson+Theatres+Lakewood+Cinema+8&amp;fb=1&amp;gl=us&amp;hq=Lakewood+Cinema+8&amp;hnear=0x89d2ab03bb4bc24b:0x42cd19540bd5578c,171+W+Fairmount+Ave,+Lakewood,+NY+14750&amp;cid=12568654799968424346&amp;t=h&amp;iwloc=A&amp;ll=42.097185,-79.343017&amp;spn=0.006295,0.006295&amp;source=embed" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+
+h3 Send Us Mail
+p Feel free to provide us with some feedback of your visit.
+
+form#survey action="submitted.html" method="GET" name="survey"
+  .field-group
+    .field
+      label for="name" Name: 
+    .field
+      input#name name="name" placeholder="First and Last name" required="true" type="text"
+  .field-group
+    .field
+      label for="phone" Phone: 
+    .field
+      input#phone name="phone" placeholder="(###) ###-####" required="true" type="tel"
+  .field-group
+    .field
+      label for="email" Email:
+    .field
+      input#email name="email" type="email" required="true" placeholder='johndoe@abc.com'
+  .field-group
+    .field
+      label for="site_navigation" Did you navigate the site well?
+    .field
+      input type="radio" name="site_navigation" required="true" value="yes"  Yes &nbsp;&nbsp;
+      input type="radio" name="site_navigation" required="true" value="no"  No
+  .field-group
+    .field
+      label for="correctness" Was all the information correct?
+    .field
+      input type="radio" name="correctness" required="true" value="yes"  Yes &nbsp;&nbsp;
+      input type="radio" name="correctness" required="true" value="no"  No
+  .field-group
+    .field
+      label for="enjoyment" Did you enjoy our services?
+    .field
+      input type="radio" name="enjoyment" required="true" value="yes"  Yes &nbsp;&nbsp;
+      input type="radio" name="enjoyment" required="true" value="no"  No
+  .form-actions
+    input type='submit' value='Submit'
+    input type='reset' value='Cancel'

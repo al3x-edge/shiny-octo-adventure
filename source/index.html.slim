@@ -1,0 +1,32 @@
+---
+title: Brad's Site Index
+---
+- content_for :head do
+  = stylesheet_link_tag "index"
+
+.row.clearfix
+  .left-column
+    markdown:
+      # Welcome Micro Films Theaters' new and improved website!
+
+      We have been bringing the joy of going out to the movies to the Lakeview, New York area for gererations. Since 1963 we have had our doors open for moviegoers to enjoy the latest and greatest movie releases.
+
+      We have been making huge changes to our movie theater, we would like to share these with you so that you know what you can expect from us now and in the future.
+
+      + All new 3D projector system
+      + New Dolby Digital Surround Sound in all theaters
+      + Brand new comfortable lazy boy recliners
+      + A 500 foot screen in every theater
+
+      We are proud to serve this area and thank all our customers who keep our business growing.
+
+      Please enjoy our new website and be on the lookout in the future for more site updates!
+  .right-column
+    h2.subtitle Latest Trailers
+    .sub-text
+      | (Click the poster to view)
+
+    .posters.clearfix
+      .poster
+        a href='trailers.html'
+          = image_tag 'man-of-steel-poster2.jpg'

@@ -1,0 +1,22 @@
+.posters{
+  .poster{
+    img{
+      width: 100%;
+    }
+  }
+}
+
+#showtimes{
+  td.rating{
+    text-align: center;
+  }
+
+  thead{
+    background-color: rgb(131, 136, 136);
+  }
+
+  tfoot td{
+    padding: 10px 0;
+    text-align: center;
+  }
+}

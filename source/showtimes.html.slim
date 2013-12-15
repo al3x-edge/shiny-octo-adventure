@@ -1,0 +1,47 @@
+- content_for :head do
+  = stylesheet_link_tag "showtimes"
+
+.row.clearfix
+  .left-column
+    h1 Showtimes
+    
+    table id='showtimes' width='100%'
+      thead
+        tr
+          th width='30%' Movie
+          th width='30%' Rating
+          th width='30%' Times Playing
+      tbody
+        tr
+          td Man Of Steel
+          td.rating PG-13
+          td 1:00, 3:00, 6:15, 9:00, 12:00
+        tr
+          td Ender's Game
+          td.rating PG-13
+          td 1:00, 3:00, 6:15, 9:00, 12:00
+        tr
+          td Ice Man
+          td.rating R
+          td 9:00
+        tr
+          td Monster's University
+          td.rating PG
+          td 1:00, 3:00, 6:15, 9:00, 12:00
+        tr
+          td Iron Man 3
+          td.rating PG-13
+          td 1:00, 3:00, 6:15, 9:00, 12:00
+      tfoot
+        td.sub-text colspan='3'
+          | *All times are subject to change or cancellation
+  .right-column
+    h2.subtitle Latest Trailers
+    .sub-text
+      | (Click the poster to view)
+
+    .posters.clearfix
+      .poster
+        a href='trailers.html'
+          = image_tag 'man-of-steel-poster2.jpg'
+
