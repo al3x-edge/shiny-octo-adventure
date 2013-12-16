@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     
-    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <!-- Always force latest IE rendering engine -->
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     
     <!-- Use title if it's in the page YAML frontmatter -->
@@ -11,11 +11,13 @@
     
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,800,900' rel='stylesheet' type='text/css'>
-    <%= stylesheet_link_tag "normalize", "mobile", "all" %>
+    <%= stylesheet_link_tag "normalize", "all" %>
+    <link href='/stylesheets/print.css' rel='stylesheet' type='text/css' media='print'>
+    <link href='/stylesheets/mobile.css' rel='stylesheet' type='text/css'>
     <%= yield_content(:head) %>
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery-url-parser/2.3.1/purl.min.js'></script>
-    <script src='//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.1.2/handlebars.min.js'></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery-url-parser/2.3.1/purl.min.js'></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.1.2/handlebars.min.js'></script>
     <%= javascript_include_tag  "all" %>
   </head>
   

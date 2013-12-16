@@ -1,0 +1,172 @@
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.clearfix {
+    *zoom: 1;
+}
+
+// Structure Styles
+.container{
+  width: 960px;
+  margin: 0 auto;
+}
+.row{
+
+}
+.left-column{
+  width: 65%;
+  float:left;
+  margin-right: 20px;
+}
+.right-column{
+  width: 32.5%;
+  float:left;
+}
+.half{
+  width: 50%;
+  float: left;
+}
+// End Structure Styles
+
+// Form Styles
+input:focus:valid {
+   background: #44741C;
+   -o-background-size: contain;
+   -moz-background-size: contain;
+   -webkit-background-size: contain;
+   background-size: contain;
+}
+
+input:focus:invalid {
+   background: #D33440;
+   -o-background-size: contain;
+   -moz-background-size: contain;
+   -webkit-background-size: contain;
+   background-size: contain;
+}
+// End Form Styles
+
+// General Styles
+body{
+  color: #333;
+  font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6{
+  color: rgb(35, 37, 37);
+  font-family: 'Alegreya Sans SC', sans-serif;
+}
+h1{ font-size: 1.75em; }
+h2{ font-size: 1.25em; }
+h3{ font-size: 1.125em; }
+a{
+  color: white;
+
+  &:hover{
+    background-color: rgb(25, 14, 3);
+  }
+}
+.sub-text{
+  font-size: 0.75em;
+  font-style: italic;
+  font-weight: 100;
+}
+.subtitle{
+  margin-bottom: 0;
+}
+
+form{
+  .field-group{
+    padding: 10px 0;
+  }
+}
+// End General Styles
+
+.logo{
+  float: left;
+  margin: 0 20px;
+  padding:0;
+
+  img{
+    display: block;
+  }
+}
+
+.name{
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+header.main{
+  background-color: grey;
+}
+
+#toolbar{
+  clear: both;
+}
+
+.nav-list{
+  background-color: rgb(62, 60, 58);
+  border:1px solid #ccc;
+  border-width:1px 0;
+  list-style:none;
+  margin:0;
+  padding:0;
+  text-align: left;
+
+  li{
+    display:inline;
+  }
+
+  a{
+    display: inline-block;
+    padding:10px 30px;
+    text-decoration: none;
+  }
+}
+
+.copyright{
+  text-align: center;
+}
+
+.posters{
+  .poster{
+    img{
+      width: 100%;
+    }
+  }
+}
+
+#showtimes{
+  td.rating{
+    text-align: center;
+  }
+
+  thead{
+    background-color: rgb(131, 136, 136);
+  }
+
+  tfoot td{
+    padding: 10px 0;
+    text-align: center;
+  }
+}
